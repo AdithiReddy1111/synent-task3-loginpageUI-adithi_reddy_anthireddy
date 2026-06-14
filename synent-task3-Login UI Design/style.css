@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eaf7ef, #cde8d3);
+    color: #2f4f2f;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 38px 34px;
+    border-radius: 22px;
+    width: 360px;
+    border: 1px solid rgba(76, 175, 80, 0.18);
+    box-shadow: 0 18px 40px rgba(61, 86, 63, 0.12);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 12px;
+    color: #2f5b32;
+    letter-spacing: 0.02em;
+}
+
+.login-box p {
+    text-align: center;
+    color: #5f7e5f;
+    margin-bottom: 28px;
+}
+
+.input-group{
+    margin-bottom: 18px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+    font-weight: bold;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #7bb977;
+    box-shadow: 0 0 0 4px rgba(123, 185, 119, 0.14);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #3a6e3a;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(135deg, #5ca96d, #3c8c4a);
+    color: #f8fdf7;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 22px rgba(60, 140, 74, 0.2);
+}
+
+@media(max-width: 400px){
+    .login-box{
+        width: 90%;
+        padding: 30px;
+    }
+}
